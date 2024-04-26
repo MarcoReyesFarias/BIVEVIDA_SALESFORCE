@@ -1,0 +1,149 @@
+/*BICEBIDA CRM FORMATO slds */
+/*slds_styles.css*/
+/* crear::afte
+cssLibrary
+   ├──slds_styles.css
+   └──slds_styles.js-meta.xml
+
+   mover el archivo slds_styles.css a la carpeta(cssLibrary) y cámbiale el nombre a slds_styles.css.
+   Ajusta el archivo slds_styles.js-meta.xml para que coincida con el formato de configuración requerido. Debería verse así
+   <!-- slds_styles.js-meta.xml -->
+    <?xml version="1.0" encoding="UTF-8" ?>
+
+*/
+/* Estilo para la franja superior */
+.top-banner {
+    background-color: #1F61F7; /* Color de fondo */
+    height: 50px; /* Altura */
+    width: 100%; /* Ancho */
+    position: fixed; /* Fijar posición */
+    top: 0; /* Posicionar en la parte superior */
+    z-index: 1000; /* Índice z para asegurar que esté por encima del resto del contenido */
+}
+
+/* Estilo para el contenedor del banner */
+.banner-container {
+    background-color: var(--slds-c-card-color-background, #FFFFFF); /* Color de fondo */
+    padding: 10px; /* Espaciado interno */
+    display: flex; /* Utilizar flexbox para alinear los elementos */
+    align-items: center; /* Alinear los elementos verticalmente */
+    position: fixed; /* Fijar posición */
+    top: 50px; /* Posicionar debajo de la franja superior */
+    width: 100%; /* Ancho total */
+    z-index: 999; /* Índice z para asegurar que esté por encima del contenido */
+    }
+/* Estilo para la imagen del gato */
+.slds-media {
+    display: flex;
+    align-items: center;
+    }
+ 
+.slds-media__figure {
+    max-width: 250px; /* Ancho máximo */
+    max-height: 250px; /* Altura máxima */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    margin-left: 10px; /* Espacio entre la imagen y el texto */
+    }
+
+    /* Estilo para el texto del título */
+.banner-text {
+    font-size: 30px; /* Tamaño de la letra */
+    width: auto; /* Ancho automático */
+    height: auto; /* Altura automática */
+    margin-left: 20px; /* Margen derecho para separar la imagen del texto */
+    }
+
+/* Estilo para el cuerpo */
+body {
+    font-family: arial, sans-serif; /* Fuente */
+    font-size: 100%; /* Tamaño de fuente base */
+    margin: 0.1em; /* Margen exterior */
+    background: var(--slds-c-card-color-background, #FFFFFF); /* Color de fondo */
+    padding-top: 200px; /* Espaciado superior para compensar la altura de la franja superior y del banner */
+    }
+
+/* Estilo para el texto del título */
+h2 {
+    color: var(--slds-c-card-text-color, #1F61F7); /* Color del texto */
+    margin: 0; /* Eliminar el margen */
+    }
+
+/* Estilo para la información actualizada */
+.updated-info {
+    margin-left: auto; /* Mover hacia la derecha */
+    color: var(--slds-c-card-text-color, #1F61F7); /* Color del texto */
+    }
+
+/* Estilo para el cuadro de texto */
+.text-box {
+    background-color: var(--slds-c-card-color-background, #DDE3ED); /* Color de fondo */
+    padding: 20px; /* Espaciado interno */
+    margin-top: 150px; /* Margen superior */
+    border-radius: var(--slds-c-card-radius-border, 0.625rem); /* Radio de borde 0.25 */
+    /*original 10xp - rem = valor px/tamaño base px = 10px/16px = 0.625rem*/
+    box-shadow: var(--slds-c-card-shadow, 0 0 10px rgba(0, 0, 0, 0.1)); /* Sombra de caja */
+    }
+
+/* Estilo para el contenedor de botones */
+.button-container {
+    text-align: center; /* Alinear al centro */
+    margin-top: 20px; /* Margen superior */
+    }
+
+/* Estilo para los botones */
+.button-container button {
+    background-color: #1F61F7; /* Color de fondo */
+    color: #FFFFFF; /* Color del texto */
+    padding: 15px 30px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 15px; /* Radio de borde */
+    margin-bottom: 30px; /* Margen inferior */
+    width: 150%; /* Ancho */
+    max-width: 350px; /* Ancho máximo */
+    display: block; /* Mostrar como bloque */
+    font-size: 30px; /* Tamaño de fuente */
+    text-decoration: none; /* Sin subrayado */
+    }
+
+/* Estilo para el botón de formulario */
+.button-container button.formulario {
+    background-color: #7CE479; /* Color de fondo */
+    }
+
+/* Estilo para el botón de Benlar */
+.button-container button.benlar {
+    background-color: #DC143C; /* Color de fondo */
+    }
+
+/* Estilo para el texto con color corporativo */
+.fc0 {
+    color: var(--slds-c-card-text-color, #1F61F7); /* Color del texto */
+    }
+
+/* Estilo para los párrafos */
+p {
+    /*font-size: 30px; /* Tamaño de fuente */
+    font-size: x-large; /* (creo que no deja cambiar el tamaño) */
+    }
+
+/* Estilo para los párrafos pequeños */
+.small-text {
+    font-size: x-small; /* Tamaño de fuente */
+}
+
+/* Estilo para resaltar */
+.highlight {
+    background-color: yellow; /* Color de fondo */
+    color: black; /* Color del texto */
+}
+
+/* Estilo para los números dentro de los párrafos */
+.number {
+    color: var(--slds-c-card-text-color, #1F61F7); /* Color del texto */
+    font-weight: bold; /* Peso de la fuente */
+}
+/* 
+    Vers. 4.0.2
+    Autor: Marco Reyes Farias
+    Fecha: 25/04/2024
+*/
